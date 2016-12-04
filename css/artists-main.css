@@ -1,0 +1,652 @@
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+}
+
+h1, h2, h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #f2f2f2;
+}
+
+p, h4, h5 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    border-radius: 1em;
+    background-color: #222;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #333;
+    border-radius: 1px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 1px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+  .profile-container {
+      max-width: 1000px;
+  }
+  .navbar {
+      position: fixed;
+      width: 220px;
+      height: 100%;
+      left: -250px;
+      z-index: 99;
+      background-color: #030708;
+      border-right: 2px solid #fff !important;
+      border-left: 0px solid #fff !important;
+      border-top: 0px solid #fff !important;
+      border-bottom: 0px solid #fff !important;
+      border-radius: 0em;
+  }
+  .navbar ul {
+      display: flex;
+      margin-top: 30px;
+      width: 100%;
+      flex-direction: column;
+      font-weight: 700;
+  }
+  .modal-dialog {
+      width: 90%;
+      height: 90%;
+      margin: 50px auto;
+      padding: 0;
+  }
+  .modal-content {
+      height: auto;
+      min-height: 100%;
+      border-radius: 0;
+  }
+  .navbar ul li {
+      margin-bottom: 10px;
+  }
+  .navbar ul li>a {
+      color: white !important;
+      text-align: center;
+      text-transform: uppercase !important;
+  }
+  .menu-btn {
+      position: fixed;
+      z-index: 98;
+      left: 20px;
+      top: 20px;
+      font-size: 2em;
+      cursor: pointer;
+      color: #fff;
+  }
+  .close-btn {
+      position: relative;
+      z-index: 100;
+      left: 20px;
+      top: 20px;
+      font-size: 2em;
+      cursor: pointer;
+      color: #fff;
+  }
+  .small {
+      width: 50%;
+      border-color: grey;
+  }
+  /*jumbotron artist home*/
+  .artists-home-c {}
+  .jumbotron-ah1 {
+      background-color: #030708;
+      max-width: 1000px;
+      position: absolute;
+      z-index: 2;
+      width: 100%;
+      left: 0;
+      overflow-x: hidden;
+      overflow-y: visible;
+  }
+  .ahome {
+      background-color: transparent;
+  }
+  .sections {
+      width: 100%;
+      display: -webkit-flex;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+  }
+  .artist-slide {
+      width: 100%;
+      height: 210px;
+      background-color: #030708;
+      margin-top: 80px;
+  }
+  .a-home1 {
+      width: 100%;
+      height: auto;
+      background-color: #030;
+      order: 1;
+  }
+  .a-home2 {
+      width: 100%;
+      height: auto;
+      background-color: #030708;
+      order: 2;
+      padding-bottom: 40px;
+  }
+  .ahomeBox {
+      border: 10px solid #030708;
+      width: 50%;
+      height: 140px;
+      background-color: inherit;
+  }
+  .nav-pills > li > a {
+    border-radius: 0px;
+    color: #fff;
+  }
+
+  .nav-pills > li.active > a,
+  .nav-pills > li.active > a:hover,
+  .nav-pills > li.active > a:focus {
+    color: #fff;
+    background-color: #111;
+    border-bottom: 2px solid #fff;
+    font-weight: 600;
+  }
+
+  .a-home3 {
+      order: 3;
+  }
+  .a-home4 {
+      order: 4;
+  }
+  .a-home5 {
+      order: 5;
+  }
+  .a-home6 {
+      order: 6;
+  }
+  .nav-pills {
+      border-bottom: 0px solid blue;
+      width: 118px;;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 30px;
+      margin-bottom: 40px;
+      background-color: #030708 !important;
+  }
+  .media-body {
+      color: #f2f2f2;
+  }
+  .media-heading {
+      font-weight: 600;
+      color: #fff;
+  }
+  .ta {
+      background-color: #030708;
+      border: 0px solid #030;
+      height: 80px;
+      text-align: center;
+  }
+  .ta p {
+      margin-top: 20px;
+      color: #fff;
+      font-weight: bold;
+  }
+  .ta a {
+      color: #fff;
+  }
+  .top-artists {
+      background-color: #030708;
+  }
+  /*jumbotron a1*/
+  .logo-artists {
+      width: 90px;
+      position: absolute;
+      left: 22px;
+      top: 5.5px;
+      z-index: 8;
+  }
+  .logo-artists img {
+      width: 100%;
+  }
+  .content-scroll {
+      position: absolute;
+      z-index: 2;
+      width: 100%;
+      height: inherit;
+      left: 0;
+      overflow-x: hidden;
+      overflow-y: visible;
+      display: flex;
+      flex-direction: row;
+  }
+  .jumbotron-a1 {
+      background-color: #030708;
+      z-index: 0;
+  }
+  .artists {
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      box-shadow: 0 0 0 #f2f2f2;
+  }
+  .artist-profile {
+      height: 200px;
+      background: url(img/blog-posts/coverphotos/cover14-bw-art1.jpg);
+      background-size: cover;
+      background-position: center;
+      margin-top: 90px;
+      margin-bottom: 15px;
+      order: 1;
+  }
+  .artist-videos {
+      order: 5;
+      border: 0px solid blue;
+      margin-top: 40px;
+      margin-bottom: 30px;
+      width: 100%;
+  }
+  .artists-text1 {
+      margin-bottom: 30px;
+  }
+  .artists-text2 {
+      margin-top: 50px;
+  }
+  .scloud-embed-home {
+      width: 80%;
+      margin: 0 auto;
+      border: 0px solid blue;
+  }
+  .artist-music {
+      height: 100px;
+      background-color: transparent;
+      margin-bottom: 30px;
+      order: 2;
+  }
+  .artist-details {
+      color: #fff;
+      text-align: center;
+  }
+  .vMore {
+      border: 0px solid blue;
+      width: 100%;
+      margin-top: 40px;
+      margin-bottom: 30px;
+      text-align: center;
+      color: #fff;
+      cursor: pointer;
+  }
+  .vMore:hover {
+      font-weight: 700;
+      color: darkred;
+      transition: all .5s;
+  }
+  .artist-description {
+      color: #fff;
+      text-align: justify;
+      margin-top: 450px;
+      margin-bottom: 30px;
+      order: 3;
+      box-shadow: 0 0 0 #f2f2f2;
+  }
+  /*jumbotron a1*/
+  /*jumbotron a2*/
+  .jumbotron-a2 {
+      position: absolute;
+      /*overflow-x: hidden;
+      overflow-y: hidden;*/
+      overflow: hidden;
+      left: -100%;
+      width: 100%;
+      height: 1000px;
+      background-color: #030708;
+      z-index: 6;
+      /*left: -100%;*/
+  }
+  .artists-music-heading {
+      margin-top: 90px;
+      margin-left: 20px;
+  }
+  .close-ap {
+      text-align: center;
+      position: absolute;
+      width: 70px;
+      top: 90px;
+      left: 70%;
+      font-size: 1.8em;
+      color: white;
+      margin-bottom: 40px;
+      background-color: #222;
+  }
+  .mpage-heading {
+      margin-top: 70px;
+  }
+  /*NEW LAYOUT CODE*/
+  .mybox {
+      border: 0px solid blue;
+      width: 89%;
+      margin: 0 auto;
+      height: 1000px;
+      overflow: hidden;
+  }
+  .myrow {
+      display: flex !important;
+      flex-wrap: wrap !important;
+  }
+  .ire {
+      width: 50%;
+      margin: 0 auto;
+      margin-top: 18%;
+  }
+  .box-square {
+      /*flex-wrap: wrap;*/
+      width: 32.5%;
+      height: 100px;
+      background-color: grey;
+      border: 2px solid #030708;
+      display: inline-block;
+  }
+  .box-square-rec {
+      /*flex-wrap: wrap;*/
+      width: 48.3%;
+      height: 100px;
+      background-color: grey;
+      border: 2px solid #030708;
+  }
+  .box-square-reclong {
+      /*flex-wrap: wrap;*/
+      width: 100%;
+      height: 100px;
+      background-color: grey;
+      border: 2px solid #030708;
+  }
+  .box-sr1 {
+      background: url(img/artist/jordsonline/14334814_344286802571062_7148273405429547008_n.jpg);
+      background-position: center;
+      background-size: cover;
+  }
+  /*box-square code*/
+  .box-s4, .box-s5, .box-s9, .box-s10 {
+      width: 23.5%;
+  }
+  .box-s6, .box-s7 {
+      background-color: #000000;
+  }
+  /*MODALS GENERIC CODE*/
+  .row-mdl-extra {
+      margin-top: 50px;
+  }
+  .modal-bc {
+      background-color: #030708 !important;
+  }
+  .modal-sub {
+      color: #fff;
+  }
+  .box-modal {
+      width: 100%;
+      margin-bottom: 20px;
+      height: 130px;
+      background-color: orange;
+      cursor: pointer;
+  }
+  .modal {
+      overflow: auto !important;
+  }
+  /*MODALS GENERIC CODE*/
+  /*jumbotron a2*/
+
+@media only screen and (min-width:325px) {
+
+}
+
+@media only screen and (min-width:360px) {
+
+}
+
+@media only screen and (min-width:404px) {
+
+}
+
+@media only screen and (min-width:768px) {
+  /*jumbotron artist home*/
+  .artists-home-c {}
+  .jumbotron-ah1 {
+      background-color: #030708;
+      max-width: 1000px;
+      position: absolute;
+      z-index: 2;
+      width: 100%;
+      left: 0;
+      overflow-x: hidden;
+      overflow-y: visible;
+  }
+  .ahome {
+      background-color: transparent;
+  }
+  .sections {
+      width: 100%;
+      display: -webkit-flex;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+  }
+  .artist-slide {
+      width: 100%;
+      height: 210px;
+      background-color: #030708;
+      margin-top: 80px;
+  }
+  .a-home1 {
+      width: 100%;
+      height: 3000px;
+        background-color: #111 !important;
+      order: 1;
+      border-bottom: 2px solid #fff;
+  }
+  .a-home2 {
+      width: 50% !important;
+      height: auto;
+      background-color: #030708;
+      order: 2;
+      padding-bottom: 40px;
+  }
+
+  .a-home2-5 {
+      width: 50%;
+      height: auto;
+      background-color: #030708;
+      order: 3;
+      padding-bottom: 40px;
+  }
+  .ahomeBox {
+      border: 10px solid #030708;
+      width: 50%;
+      height: 140px;
+      background-color: inherit;
+  }
+  .nav-pills > li > a {
+    border-radius: 0px;
+    color: #fff;
+  }
+
+  .nav-pills > li.active > a,
+  .nav-pills > li.active > a:hover,
+  .nav-pills > li.active > a:focus {
+    color: #fff;
+    background-color: #111;
+    border-bottom: 2px solid #fff;
+    font-weight: 600;
+  }
+
+  .a-home3 {
+      order: 4;
+  }
+  .a-home4 {
+      order: 5;
+  }
+  .a-home5 {
+      order: 6;
+  }
+  .a-home6 {
+      order: 7;
+  }
+  .nav-pills {
+      border-bottom: 0px solid blue;
+      width: 36.8%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 30px;
+      margin-bottom: 40px;
+      background-color: #030708 !important;
+  }
+  .media-body {
+      color: #f2f2f2;
+  }
+  .media-heading {
+      font-weight: 600;
+      color: #fff;
+  }
+  .ta {
+      background-color: #111 !important;
+      border: 0px solid #030;
+      height: 80px;
+      padding-top: 10px;
+      text-align: center;
+  }
+  .ta p {
+      margin-top: 20px;
+      color: #fff;
+      font-weight: bold;
+  }
+  .ta a {
+      color: #fff;
+  }
+  .top-artists {
+      background-color: #030708;
+  }
+  /*jumbotron artist home*/
+  /*.artists-home-c {}
+  .jumbotron-ah1 {
+      background-color: #030708;
+      max-width: 1000px;
+      position: absolute;
+      z-index: 2;
+      width: 100%;
+      left: 0;
+      overflow-x: hidden;
+      overflow-y: visible;
+  }
+  .ahome {
+      background-color: transparent;
+  }
+  .sections {
+      width: 100%;
+      display: -webkit-flex;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+  }
+  .artist-slide {
+      width: 100%;
+      height: 210px;
+      background-color: #030708;
+      margin-top: 80px;
+  }
+  .a-home1 {
+      width: 100%;
+      height: auto;
+      background-color: #030;
+      order: 1;
+  }
+  .a-home2 {
+      width: 100%;
+      height: auto;
+      background-color: #030708;
+      order: 2;
+      padding-bottom: 40px;
+  }
+  .ahomeBox {
+      border: 10px solid #030708;
+      width: 50%;
+      height: 140px;
+      background-color: inherit;
+  }
+  .nav-pills > li > a {
+    border-radius: 0px;
+    color: #fff;
+  }
+
+  .nav-pills > li.active > a,
+  .nav-pills > li.active > a:hover,
+  .nav-pills > li.active > a:focus {
+    color: #fff;
+    background-color: #111;
+    border-bottom: 2px solid #fff;
+    font-weight: 600;
+  }
+
+  .a-home3 {
+      order: 3;
+  }
+  .a-home4 {
+      order: 4;
+  }
+  .a-home5 {
+      order: 5;
+  }
+  .a-home6 {
+      order: 6;
+  }
+  .nav-pills {
+      border-bottom: 0px solid blue;
+      width: 120px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 30px;
+      margin-bottom: 40px;
+      background-color: #030708 !important;
+  }
+  .media-body {
+      color: #f2f2f2;
+  }
+  .media-heading {
+      font-weight: 600;
+      color: #fff;
+  }
+  .ta {
+      background-color: #030708;
+      border: 0px solid #030;
+      height: 80px;
+      text-align: center;
+  }
+  .ta p {
+      margin-top: 20px;
+      color: #fff;
+      font-weight: bold;
+  }
+  .ta a {
+      color: #fff;
+  }
+  .top-artists {
+      background-color: #030708;
+  }*/
+
+}
+
+@media only screen and (min-width:768px) and (orientation: landscape) {
+
+}
+
+@media only screen and (min-width:1200px) {
+
+}
